@@ -37,4 +37,4 @@ http://helpMeCodeSwift.com
 
 ## License
 
-ProcessButton is available under the MIT license. See the [LICENSE](https://github.com/ravenshore/floaters/blob/master/LICENSE.md) file for more info.
+iOS Floaters is available under the MIT license. See the [LICENSE](https://github.com/ravenshore/floaters/blob/master/LICENSE.md) file for more info.
