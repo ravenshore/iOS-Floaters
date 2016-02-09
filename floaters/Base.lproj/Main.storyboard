@@ -1,25 +1,139 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="floaters" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="Floater" customModule="floaters" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="450"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W23-ia-RHl">
+                                <rect key="frame" x="50" y="403" width="34" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.60861088712951195" green="0.61232152892945946" blue="0.70369764397905765" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ju-ag-IhU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfO-np-hGm">
+                                <rect key="frame" x="220" y="403" width="30" height="30"/>
+                                <state key="normal" title="End">
+                                    <color key="titleColor" red="0.74189044521254122" green="0.74641367960614735" blue="0.85780022905759168" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="endTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M3L-JH-DJr"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Atz-bl-Pmf" customClass="Floater" customModule="floaters" customModuleProvider="target">
+                                <rect key="frame" x="150" y="200" width="50" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ZfT-zp-EfY"/>
+                                    <constraint firstAttribute="width" constant="207" id="kaA-Za-9N1"/>
+                                    <constraint firstAttribute="width" constant="50" id="zSg-9b-5FL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatieWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatieHeight">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="density">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="speed">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delayedStart">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="speedY">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="speedX">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotationSpeed">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alphaAtStart">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alphaAtEnd">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="FloatingUp" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="removeAtEnd" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="floaterImage1" value="heart2.png"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="floaterImage2" value="heart3.png"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="floaterImage3" value="heart1.png"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kaA-Za-9N1"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2164747756161039" green="0.18138482098238642" blue="0.70369764397905765" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W23-ia-RHl" secondAttribute="bottom" constant="17" id="3x6-A6-Uhn"/>
+                            <constraint firstItem="vfO-np-hGm" firstAttribute="baseline" secondItem="W23-ia-RHl" secondAttribute="baseline" id="Rnc-NC-mNb"/>
+                            <constraint firstItem="W23-ia-RHl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="Stc-cw-ieA"/>
+                            <constraint firstItem="Atz-bl-Pmf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="25" id="h7c-OZ-eBH"/>
+                            <constraint firstItem="Atz-bl-Pmf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hQJ-8H-u2B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Atz-bl-Pmf" secondAttribute="trailing" constant="80" id="pfg-p6-1ty"/>
+                            <constraint firstItem="Atz-bl-Pmf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="238" id="sj8-pk-5yY"/>
+                            <constraint firstAttribute="trailing" secondItem="vfO-np-hGm" secondAttribute="trailing" constant="50" id="vca-fX-n2c"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Atz-bl-Pmf" secondAttribute="bottom" constant="50" id="x9s-OO-ttH"/>
+                            <constraint firstItem="Atz-bl-Pmf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="154" id="ysF-eP-xS7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hQJ-8H-u2B"/>
+                                <exclude reference="pfg-p6-1ty"/>
+                                <exclude reference="sj8-pk-5yY"/>
+                                <exclude reference="ysF-eP-xS7"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="450"/>
+                    <connections>
+                        <outlet property="floaterView" destination="Atz-bl-Pmf" id="9Iw-Zg-XPk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="378" y="339"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heart1.png" width="50" height="50"/>
+        <image name="heart2.png" width="50" height="50"/>
+        <image name="heart3.png" width="50" height="50"/>
+    </resources>
 </document>

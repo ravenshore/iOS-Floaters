@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var floaterView: Floater!
+    @IBAction func startTapped(sender: AnyObject) {
+        floaterView.startAnimation()
+        print("start")
+    }
+    
+    @IBAction func endTapped(sender: AnyObject) {
+        floaterView.stopAnimation()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

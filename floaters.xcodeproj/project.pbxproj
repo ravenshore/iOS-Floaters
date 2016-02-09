@@ -15,6 +15,12 @@
 		50D289C41C694488003CFDDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D289C21C694488003CFDDB /* LaunchScreen.storyboard */; };
 		50D289CF1C694489003CFDDB /* floatersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D289CE1C694489003CFDDB /* floatersTests.swift */; };
 		50D289DA1C694489003CFDDB /* floatersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D289D91C694489003CFDDB /* floatersUITests.swift */; };
+		50D289E81C694D9A003CFDDB /* Floater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D289E71C694D9A003CFDDB /* Floater.swift */; };
+		50D289EA1C6958EC003CFDDB /* crate.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D289E91C6958EC003CFDDB /* crate.png */; };
+		50F9C9631C69BC57003165A7 /* heart1.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F9C95F1C69BC57003165A7 /* heart1.png */; };
+		50F9C9641C69BC57003165A7 /* heart2.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F9C9601C69BC57003165A7 /* heart2.png */; };
+		50F9C9651C69BC57003165A7 /* heart3.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F9C9611C69BC57003165A7 /* heart3.png */; };
+		50F9C9661C69BC57003165A7 /* heart4.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F9C9621C69BC57003165A7 /* heart4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		50D289D51C694489003CFDDB /* floatersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = floatersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D289D91C694489003CFDDB /* floatersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = floatersUITests.swift; sourceTree = "<group>"; };
 		50D289DB1C694489003CFDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D289E71C694D9A003CFDDB /* Floater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floater.swift; sourceTree = "<group>"; };
+		50D289E91C6958EC003CFDDB /* crate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crate.png; path = ../../../../Art/crate.png; sourceTree = "<group>"; };
+		50F9C95F1C69BC57003165A7 /* heart1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart1.png; path = ../../../../Art/icons/heart1.png; sourceTree = "<group>"; };
+		50F9C9601C69BC57003165A7 /* heart2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart2.png; path = ../../../../Art/icons/heart2.png; sourceTree = "<group>"; };
+		50F9C9611C69BC57003165A7 /* heart3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart3.png; path = ../../../../Art/icons/heart3.png; sourceTree = "<group>"; };
+		50F9C9621C69BC57003165A7 /* heart4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart4.png; path = ../../../../Art/icons/heart4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +113,13 @@
 			children = (
 				50D289B61C694488003CFDDB /* AppDelegate.swift */,
 				50D289B81C694488003CFDDB /* ViewController.swift */,
+				50D289E71C694D9A003CFDDB /* Floater.swift */,
 				50D289BA1C694488003CFDDB /* Main.storyboard */,
+				50F9C95F1C69BC57003165A7 /* heart1.png */,
+				50F9C9601C69BC57003165A7 /* heart2.png */,
+				50F9C9611C69BC57003165A7 /* heart3.png */,
+				50F9C9621C69BC57003165A7 /* heart4.png */,
+				50D289E91C6958EC003CFDDB /* crate.png */,
 				50D289C01C694488003CFDDB /* Assets.xcassets */,
 				50D289C21C694488003CFDDB /* LaunchScreen.storyboard */,
 				50D289C51C694488003CFDDB /* Info.plist */,
@@ -233,8 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D289C41C694488003CFDDB /* LaunchScreen.storyboard in Resources */,
+				50F9C9641C69BC57003165A7 /* heart2.png in Resources */,
 				50D289C11C694488003CFDDB /* Assets.xcassets in Resources */,
 				50D289BC1C694488003CFDDB /* Main.storyboard in Resources */,
+				50F9C9631C69BC57003165A7 /* heart1.png in Resources */,
+				50F9C9661C69BC57003165A7 /* heart4.png in Resources */,
+				50F9C9651C69BC57003165A7 /* heart3.png in Resources */,
+				50D289EA1C6958EC003CFDDB /* crate.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D289B91C694488003CFDDB /* ViewController.swift in Sources */,
+				50D289E81C694D9A003CFDDB /* Floater.swift in Sources */,
 				50D289B71C694488003CFDDB /* AppDelegate.swift in Sources */,
 				50D289BF1C694488003CFDDB /* floaters.xcdatamodeld in Sources */,
 			);
@@ -486,6 +510,7 @@
 				50D289E01C694489003CFDDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50D289E11C694489003CFDDB /* Build configuration list for PBXNativeTarget "floatersTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +519,7 @@
 				50D289E31C694489003CFDDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50D289E41C694489003CFDDB /* Build configuration list for PBXNativeTarget "floatersUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +528,7 @@
 				50D289E61C694489003CFDDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
