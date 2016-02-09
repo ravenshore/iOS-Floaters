@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var floaterView: Floater!
     @IBAction func startTapped(sender: AnyObject) {
         floaterView.startAnimation()
-        print("start")
     }
     
     @IBAction func endTapped(sender: AnyObject) {

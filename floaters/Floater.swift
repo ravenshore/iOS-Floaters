@@ -16,7 +16,7 @@ import UIKit
     var image3: UIImage?
     var image4: UIImage?
     
-    var isAnimating: Bool = true
+    var isAnimating: Bool = false
     var views: [UIView]!
     var duration: NSTimeInterval = 1.0
     var duration1: NSTimeInterval = 2.0
@@ -129,6 +129,8 @@ import UIKit
     
     func startAnimation() {
         
+        if !isAnimating {
+         print("Start Animating")
         isAnimating = true
         views = []
         var imagesArray = [UIImage?]()
@@ -213,13 +215,15 @@ import UIKit
                         }
                     })
                 }
-            }
-            
+              }
+           }
+        } else {
+            print("Already Animating")
         }
     }
     
     func stopAnimation() {
-        
+        print("Stop Animating")
         views = []
         isAnimating = false
         if !views.isEmpty {
