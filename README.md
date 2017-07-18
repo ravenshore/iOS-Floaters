@@ -12,15 +12,15 @@ Easily add animated icons/emoji/images, similar to the Periscope floating hearts
 
 Usage is as easy as:
 
-```
+```swift
 @IBOutlet weak var floaterView: Floater!
 
 @IBAction func startTapped(sender: AnyObject) {
-floaterView.startAnimation()
+    floaterView.startAnimation()
 }
 
 @IBAction func endTapped(sender: AnyObject) {
-floaterView.stopAnimation()
+    floaterView.stopAnimation()
 }
 ```
 
