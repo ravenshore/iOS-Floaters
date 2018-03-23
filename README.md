@@ -1,7 +1,8 @@
 # ios Floaters 
 
 [![Language](https://img.shields.io/badge/Swift-4-orange.svg)]()
-[![GitHub license](https://img.shields.io/cocoapods/l/PMSuperButton.svg)] (https://github.com/ravenshore/floaters/blob/master/LICENSE.md)
+[![GitHub license](https://img.shields.io/cocoapods/l/PMSuperButton.svg)]()
+
 Easily add animated icons/emoji/images, similar to the Periscope floating hearts effect.
 
 [  Updated for Swift 4 ]
@@ -16,7 +17,7 @@ Easily add animated icons/emoji/images, similar to the Periscope floating hearts
 
 Usage is as easy as:
 
-```
+```Swift
 @IBOutlet weak var floaterView: Floater!
 
 @IBAction func startTapped(sender: AnyObject) {
