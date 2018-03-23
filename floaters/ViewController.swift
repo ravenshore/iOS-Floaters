@@ -10,17 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var densityLabel: UILabel!
     @IBOutlet weak var floaterView: Floater!
-    @IBAction func startTapped(sender: AnyObject) {
+    @IBAction func startTapped(_ sender: Any) {
         floaterView.startAnimation()
     }
     
-    @IBAction func endTapped(sender: AnyObject) {
+    @IBAction func endTapped(_ sender: Any) {
         floaterView.stopAnimation()
     }
     
+    @IBAction func plusTapped(_ sender: Any) {
+        floaterView.density += 1
+        densityLabel.text = "\(floaterView.density)"
+    }
+    
+    @IBAction func minusTapped(_ sender: Any) {
+        floaterView.density -= 1
+        densityLabel.text = "\(floaterView.density)"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        densityLabel.text = "\(floaterView.density)"
         // Do any additional setup after loading the view, typically from a nib.
     }
 

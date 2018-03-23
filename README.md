@@ -1,6 +1,10 @@
 # ios Floaters 
 
+[![Language](https://img.shields.io/badge/Swift-4-orange.svg)]()
+[![GitHub license](https://img.shields.io/cocoapods/l/PMSuperButton.svg)] (https://github.com/ravenshore/floaters/blob/master/LICENSE.md)
 Easily add animated icons/emoji/images, similar to the Periscope floating hearts effect.
+
+[  Updated for Swift 4 ]
 
 ![](floaties1.gif)
 ![](floaties2.gif)
@@ -22,6 +26,9 @@ floaterView.startAnimation()
 @IBAction func endTapped(sender: AnyObject) {
 floaterView.stopAnimation()
 }
+
+// Change the density like ... ( look at example )
+floaterView.density = 25
 ```
 
 Take a look at the project to see a full example.
